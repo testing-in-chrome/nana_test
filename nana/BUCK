@@ -1,6 +1,6 @@
 import os
 from os import path
-import fnmatch 
+import fnmatch
 
 def get_include_files():
   matches = {}
@@ -10,7 +10,7 @@ def get_include_files():
       matches[
         os.path.relpath(os.path.join(root, filename), './nana/include/nana')
       ] = os.path.relpath(os.path.join(root, filename), './nana')
-  
+
   matches['pop_ignore_diagnostic'] = (
     'include/nana/pop_ignore_diagnostic'
   )
@@ -33,6 +33,7 @@ cxx_library(
   compiler_flags = [
     '-std=c++14',
     '-I/usr/include/freetype2',
+    '-I/usr/include/libpng12',
   ],
   exported_deps = [
     ':misc',
@@ -49,9 +50,10 @@ prebuilt_cxx_library(
     '-lX11',
     '-lpthread',
     '-lXft',
-    '-lpng',
+    '-lpng12',
     '-lasound',
     '-lstdc++fs',
+    '-ljpeg',
   ],
   visibility = [
     'PUBLIC',
