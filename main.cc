@@ -3,6 +3,7 @@
 #include "nana/gui.hpp"
 //Include a label widget, we will use it in this example.
 #include "nana/gui/widgets/label.hpp"
+#include <nana/gui/widgets/button.hpp>
 
 int main() {
   //All names of Nana is in the namespace nana;
@@ -29,11 +30,17 @@ int main() {
   lb.caption("Hello, world!");
   //Set a background color, just for observation.
   lb.bgcolor(colors::azure);
+
+  button btn(fm);
+  btn.caption("Quit");
+  btn.events().click(API::exit);
+
   //Define a layout object for the form.
   place layout(fm);
   //The div-text
-  layout.div("vert<><<><here weight=80><>><>");
+  layout.div("vert<><<><here weight=80><>><exit>");
   layout["here"] << lb;
+  layout["exit"] << btn;
   layout.collocate();
 
   fm.show();
