@@ -1,0 +1,59 @@
+import os
+from os import path
+import fnmatch 
+
+def get_include_files():
+  matches = {}
+  current_path = './nana/include/nana'
+  for root, dirnames, filenames in os.walk(current_path):
+    for filename in fnmatch.filter(filenames, '*.hpp'):
+      matches[
+        os.path.relpath(os.path.join(root, filename), './nana/include/nana')
+      ] = os.path.relpath(os.path.join(root, filename), './nana')
+  
+  matches['pop_ignore_diagnostic'] = (
+    'include/nana/pop_ignore_diagnostic'
+  )
+  matches['push_ignore_diagnostic'] = (
+    'include/nana/push_ignore_diagnostic'
+  )
+  return matches
+
+def get_source_files():
+  matches = []
+  for root, dirnames, filenames in os.walk('./nana/source'):
+    for filename in fnmatch.filter(filenames, '*.cpp'):
+      matches.append(os.path.relpath(os.path.join(root, filename), './nana'))
+  return matches
+
+cxx_library(
+  name = 'nana',
+  srcs = get_source_files(),
+  exported_headers = get_include_files(),
+  compiler_flags = [
+    '-std=c++14',
+    '-I/usr/include/freetype2',
+  ],
+  exported_deps = [
+    ':misc',
+  ],
+  visibility = [
+    'PUBLIC',
+  ],
+)
+
+prebuilt_cxx_library(
+  name = 'misc',
+  header_only = True,
+  exported_linker_flags = [
+    '-lX11',
+    '-lpthread',
+    '-lXft',
+    '-lpng',
+    '-lasound',
+    '-lstdc++fs',
+  ],
+  visibility = [
+    'PUBLIC',
+  ],
+)
