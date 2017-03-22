@@ -13,14 +13,13 @@
 
 #ifndef NANA_GUI_SKELETONS_TEXT_EDITOR_HPP
 #define NANA_GUI_SKELETONS_TEXT_EDITOR_HPP
-#include <nana/push_ignore_diagnostic>
-
 #include "textbase.hpp"
 #include "text_editor_part.hpp"
 #include <nana/unicode_bidi.hpp>
 
 //#include <nana/paint/graphics.hpp>
 #include <nana/gui/detail/general_events.hpp>
+#include <nana/push_ignore_diagnostic.hpp>
 
 #include <functional>
 
@@ -305,7 +304,7 @@ namespace nana{	namespace widgets
 }//end namespace widgets
 }//end namespace nana
 
-#include <nana/pop_ignore_diagnostic>
+#include <nana/pop_ignore_diagnostic.hpp>
 
 #endif
 

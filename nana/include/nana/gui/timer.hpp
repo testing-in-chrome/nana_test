@@ -16,7 +16,7 @@
 #ifndef NANA_GUI_TIMER_HPP
 #define NANA_GUI_TIMER_HPP
 #include <nana/gui/detail/general_events.hpp>
-#include <nana/push_ignore_diagnostic>
+#include <nana/push_ignore_diagnostic.hpp>
 
 namespace nana
 {  
@@ -59,5 +59,5 @@ namespace nana
 		implement * const impl_;
 	};
 }//end namespace nana
-#include <nana/pop_ignore_diagnostic>
+#include <nana/pop_ignore_diagnostic.hpp>
 #endif

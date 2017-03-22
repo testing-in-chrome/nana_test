@@ -16,7 +16,6 @@
 #include <map>
 #include <deque>
 #include <algorithm>
-#include <nana/push_ignore_diagnostic>
 #include <nana/deploy.hpp>
 #include <nana/gui/place.hpp>
 #include <nana/gui/programming_interface.hpp>
@@ -24,6 +23,7 @@
 #include <nana/gui/widgets/panel.hpp>
 #include <nana/gui/dragger.hpp>
 #include <nana/gui/drawing.hpp>
+#include <nana/push_ignore_diagnostic.hpp>
 
 #include <memory>
 #include <limits>	//numeric_limits
@@ -2847,4 +2847,4 @@ namespace nana
 	//end class place
 }//end namespace nana
 
-#include <nana/pop_ignore_diagnostic>
+#include <nana/pop_ignore_diagnostic.hpp>

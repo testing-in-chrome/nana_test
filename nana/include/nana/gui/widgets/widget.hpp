@@ -13,10 +13,10 @@
 #ifndef NANA_GUI_WIDGET_HPP
 #define NANA_GUI_WIDGET_HPP
 
-#include <nana/push_ignore_diagnostic>
 #include "../programming_interface.hpp"
 #include <nana/internationalization.hpp>
 #include <nana/gui/detail/drawer.hpp>
+#include <nana/push_ignore_diagnostic.hpp>
 
 namespace nana
 {
@@ -527,5 +527,5 @@ namespace nana
 #endif
 }//end namespace nana
 
-#include <nana/pop_ignore_diagnostic>
+#include <nana/pop_ignore_diagnostic.hpp>
 #endif

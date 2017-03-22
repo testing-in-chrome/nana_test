@@ -12,8 +12,7 @@
 
 #ifndef NANA_GUI_WIDGET_CHECKBOX_HPP
 #define NANA_GUI_WIDGET_CHECKBOX_HPP
-#include <nana/push_ignore_diagnostic>
-
+#include <nana/push_ignore_diagnostic.hpp>
 #include "widget.hpp"
 #include <vector>
 #include <memory>
@@ -108,6 +107,6 @@ namespace drawerbase
 		std::vector<element_tag> ui_container_;
 	};
 }//end namespace nana
-#include <nana/pop_ignore_diagnostic>
+#include <nana/pop_ignore_diagnostic.hpp>
 
 #endif

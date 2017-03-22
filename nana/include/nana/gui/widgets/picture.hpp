@@ -13,8 +13,7 @@
  */
 #ifndef NANA_GUI_WIDGET_PICTURE_HPP
 #define NANA_GUI_WIDGET_PICTURE_HPP
-#include <nana/push_ignore_diagnostic>
-
+#include <nana/push_ignore_diagnostic.hpp>
 #include "widget.hpp"
 
 namespace nana
@@ -69,6 +68,6 @@ namespace nana
 		bool transparent() const;
 	};
 }//end namespace nana
-#include <nana/pop_ignore_diagnostic>
+#include <nana/pop_ignore_diagnostic.hpp>
 
 #endif

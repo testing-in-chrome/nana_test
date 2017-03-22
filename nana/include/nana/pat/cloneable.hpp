@@ -13,8 +13,8 @@
 #ifndef NANA_PAT_CLONEABLE_HPP
 #define NANA_PAT_CLONEABLE_HPP
 
-#include <nana/push_ignore_diagnostic>
 #include <nana/c++defines.hpp>
+#include <nana/push_ignore_diagnostic.hpp>
 #include <cstddef>
 #include <type_traits>
 #include <memory>
@@ -206,5 +206,5 @@ namespace nana{ namespace pat{
 	using mutable_cloneable = cloneable<T, true>;
 }//end namespace pat
 }//end namespace nana
-#include <nana/pop_ignore_diagnostic>
+#include <nana/pop_ignore_diagnostic.hpp>
 #endif

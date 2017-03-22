@@ -15,8 +15,7 @@
 #ifndef NANA_GUI_BASIS_HPP
 #define NANA_GUI_BASIS_HPP
 
-#include <nana/push_ignore_diagnostic>
-
+#include <nana/push_ignore_diagnostic.hpp>
 #include "../basic_types.hpp"
 #include "../traits.hpp"	//metacomp::fixed_type_set
 
@@ -298,5 +297,5 @@ that return a corresponding nana::appearance with predefined values.
 	}
 }//end namespace nana
 
-#include <nana/pop_ignore_diagnostic>
+#include <nana/pop_ignore_diagnostic.hpp>
 #endif

@@ -12,8 +12,7 @@
 
 #ifndef NANA_GUI_WIDGETS_FLOAT_LISTBOX_HPP
 #define NANA_GUI_WIDGETS_FLOAT_LISTBOX_HPP
-#include <nana/push_ignore_diagnostic>
-
+#include <nana/push_ignore_diagnostic.hpp>
 #include "widget.hpp"
 #include <vector>
 #include <memory>
@@ -102,6 +101,6 @@ namespace nana
 		std::size_t index() const;
 	};
 }
-#include <nana/pop_ignore_diagnostic>
+#include <nana/pop_ignore_diagnostic.hpp>
 
 #endif

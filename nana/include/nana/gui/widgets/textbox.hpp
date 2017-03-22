@@ -11,9 +11,8 @@
  */
 #ifndef NANA_GUI_WIDGET_TEXTBOX_HPP
 #define NANA_GUI_WIDGET_TEXTBOX_HPP
-#include <nana/push_ignore_diagnostic>
-
 #include <nana/gui/widgets/widget.hpp>
+#include <nana/push_ignore_diagnostic.hpp>
 #include "skeletons/textbase_export_interface.hpp"
 #include "skeletons/text_editor_part.hpp"
 
@@ -250,6 +249,6 @@ namespace nana
 		void _m_typeface(const paint::font&) override;
 	};
 }//end namespace nana
-#include <nana/pop_ignore_diagnostic>
+#include <nana/pop_ignore_diagnostic.hpp>
 
 #endif

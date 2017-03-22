@@ -11,8 +11,8 @@
 
 #ifndef NANA_GUI_WIDGETS_DETAIL_TREE_CONT_HPP
 #define NANA_GUI_WIDGETS_DETAIL_TREE_CONT_HPP
+#include <nana/push_ignore_diagnostic.hpp>
 #include <stack>
-#include <nana/push_ignore_diagnostic>
 
 namespace nana
 {
@@ -517,5 +517,5 @@ namespace detail
 }//end namespace widgets
 }//end namesace nana
 
-#include <nana/pop_ignore_diagnostic>
+#include <nana/pop_ignore_diagnostic.hpp>
 #endif

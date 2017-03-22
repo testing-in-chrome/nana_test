@@ -12,8 +12,7 @@
 
 #ifndef NANA_GUI_MSGBOX_HPP
 #define NANA_GUI_MSGBOX_HPP
-#include <nana/push_ignore_diagnostic>
-
+#include <nana/push_ignore_diagnostic.hpp>
 #include <sstream>
 
 namespace nana
@@ -260,6 +259,6 @@ namespace nana
 		::nana::rectangle valid_areas_[4];
 	};
 }//end namespace nana
-#include <nana/pop_ignore_diagnostic>
+#include <nana/pop_ignore_diagnostic.hpp>
 
 #endif

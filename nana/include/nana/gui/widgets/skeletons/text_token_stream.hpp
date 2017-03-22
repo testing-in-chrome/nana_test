@@ -14,6 +14,7 @@
 #define NANA_GUI_WIDGETS_SKELETONS_TEXT_TOKEN_STREAM
 
 #include <nana/gui/layout_utility.hpp>
+#include <nana/push_ignore_diagnostic.hpp>
 
 #include <deque>
 #include <vector>
@@ -21,7 +22,6 @@
 #include <stack>
 #include <stdexcept>
 
-#include <nana/push_ignore_diagnostic>
 
 namespace nana{ namespace widgets{	namespace skeletons
 {
@@ -940,5 +940,5 @@ namespace nana{ namespace widgets{	namespace skeletons
 }//end namespace skeletons
 }//end namespace widgets
 }//end namepsace nana
-#include <nana/pop_ignore_diagnostic>
+#include <nana/pop_ignore_diagnostic.hpp>
 #endif	//NANA_GUI_WIDGETS_SKELETONS_TEXT_TOKEN_STREAM

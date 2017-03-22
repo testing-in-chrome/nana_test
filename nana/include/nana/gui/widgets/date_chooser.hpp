@@ -12,9 +12,9 @@
 
 #ifndef NANA_GUI_WIDGETS_DATE_CHOOSER_HPP
 #define NANA_GUI_WIDGETS_DATE_CHOOSER_HPP
-#include <nana/push_ignore_diagnostic>
 #include "widget.hpp"
 #include <nana/datetime.hpp>
+#include <nana/push_ignore_diagnostic.hpp>
 
 namespace nana
 {
@@ -79,6 +79,6 @@ namespace nana
 		void weekstr(unsigned index, ::std::string);///<Set the week strings which will be displayed for day, index is in range of [0, 6]
 	};
 }//end namespace nana
-#include <nana/pop_ignore_diagnostic>
+#include <nana/pop_ignore_diagnostic.hpp>
 
 #endif

@@ -29,10 +29,8 @@
 
 #ifndef NANA_FILESYSTEM_HPP
 #define NANA_FILESYSTEM_HPP
-#include <nana/push_ignore_diagnostic>
-
-//Filesystem Selection
 #include <nana/config.hpp>
+#include <nana/push_ignore_diagnostic.hpp>
 
 #if defined(NANA_USING_NANA_FILESYSTEM) || defined(NANA_USING_STD_FILESYSTEM) || defined(NANA_USING_BOOST_FILESYSTEM)
 #undef NANA_USING_NANA_FILESYSTEM
@@ -471,5 +469,5 @@ namespace std {
 
 #endif	//NANA_USING_NANA_FILESYSTEM
 
-#include <nana/pop_ignore_diagnostic>
+#include <nana/pop_ignore_diagnostic.hpp>
 #endif	//NANA_FILESYSTEM_HPP

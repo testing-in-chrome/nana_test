@@ -13,10 +13,9 @@
 
 #ifndef NANA_GUI_WIDGET_DETAIL_TEXTBASE_HPP
 #define NANA_GUI_WIDGET_DETAIL_TEXTBASE_HPP
-#include <nana/push_ignore_diagnostic>
-
 #include <nana/charset.hpp>
 #include <nana/basic_types.hpp>
+#include <nana/push_ignore_diagnostic.hpp>
 #include <nana/traits.hpp>
 #include "textbase_export_interface.hpp"
 
@@ -537,6 +536,6 @@ namespace skeletons
 }//end namespace detail
 }//end namespace widgets
 }//end namespace nana
-#include <nana/pop_ignore_diagnostic>
+#include <nana/pop_ignore_diagnostic.hpp>
 
 #endif

@@ -12,8 +12,8 @@
 
 #ifndef NANA_GUI_ANIMATION_HPP
 #define NANA_GUI_ANIMATION_HPP
-#include <nana/push_ignore_diagnostic>
 #include <nana/paint/image.hpp>
+#include <nana/push_ignore_diagnostic.hpp>
 
 #include <functional>
 #include <memory>
@@ -82,5 +82,5 @@ namespace nana
 		impl * impl_;
 	};
 }	//end namespace nana
-#include <nana/pop_ignore_diagnostic>
+#include <nana/pop_ignore_diagnostic.hpp>
 #endif	//NANA_GUI_ANIMATION_HPP

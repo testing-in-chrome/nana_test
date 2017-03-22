@@ -16,7 +16,7 @@
 #include <nana/gui/widgets/widget.hpp>
 #include <nana/pat/cloneable.hpp>
 #include <nana/any.hpp>
-#include <nana/push_ignore_diagnostic>
+#include <nana/push_ignore_diagnostic.hpp>
 
 namespace nana
 {
@@ -259,5 +259,5 @@ namespace nana
 		}
 	};
 }//end namespace nana
-#include <nana/pop_ignore_diagnostic>
+#include <nana/pop_ignore_diagnostic.hpp>
 #endif

@@ -13,11 +13,10 @@
  */
 #ifndef NANA_GUI_WIDGET_TABBAR_HPP
 #define NANA_GUI_WIDGET_TABBAR_HPP
-#include <nana/push_ignore_diagnostic>
-
 #include "widget.hpp"
 #include <nana/pat/cloneable.hpp>
 #include <nana/any.hpp>
+#include <nana/push_ignore_diagnostic.hpp>
 
 namespace nana
 {
@@ -419,6 +418,6 @@ namespace nana
 		void erase(std::size_t pos, bool close_attached = true);
 	};
 }
-#include <nana/pop_ignore_diagnostic>
+#include <nana/pop_ignore_diagnostic.hpp>
 
 #endif

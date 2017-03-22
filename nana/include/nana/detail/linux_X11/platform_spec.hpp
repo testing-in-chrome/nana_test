@@ -18,7 +18,7 @@
 #ifndef NANA_DETAIL_PLATFORM_SPEC_HPP
 #define NANA_DETAIL_PLATFORM_SPEC_HPP
 
-#include <nana/push_ignore_diagnostic>
+#include <nana/push_ignore_diagnostic.hpp>
 
 #include <thread>
 #include <mutex>
@@ -335,7 +335,7 @@ namespace detail
 
 }//end namespace nana
 
-#include <nana/pop_ignore_diagnostic>
+#include <nana/pop_ignore_diagnostic.hpp>
 // .h ward
 #endif
 

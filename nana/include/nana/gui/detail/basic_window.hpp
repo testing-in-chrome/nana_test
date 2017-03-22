@@ -13,7 +13,6 @@
 
 #ifndef NANA_GUI_DETAIL_BASIC_WINDOW_HPP
 #define NANA_GUI_DETAIL_BASIC_WINDOW_HPP
-#include <nana/push_ignore_diagnostic>
 #include "drawer.hpp"
 #include "events_holder.hpp"
 #include "widget_geometrics.hpp"
@@ -21,6 +20,7 @@
 #include <nana/basic_types.hpp>
 #include <nana/system/platform.hpp>
 #include <nana/gui/effects.hpp>
+#include <nana/push_ignore_diagnostic.hpp>
 
 namespace nana{
 namespace detail
@@ -255,6 +255,6 @@ namespace detail
 
 }//end namespace detail
 }//end namespace nana
-#include <nana/pop_ignore_diagnostic>
+#include <nana/pop_ignore_diagnostic.hpp>
 #endif
 

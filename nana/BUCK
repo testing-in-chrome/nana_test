@@ -3,32 +3,17 @@ from os import path
 import fnmatch
 
 def get_include_files():
-  matches = {}
-  current_path = './nana/include/nana'
-  for root, dirnames, filenames in os.walk(current_path):
-    for filename in fnmatch.filter(filenames, '*.hpp'):
-      matches[
-        os.path.relpath(os.path.join(root, filename), './nana/include/nana')
-      ] = os.path.relpath(os.path.join(root, filename), './nana')
-
-  matches['pop_ignore_diagnostic'] = (
-    'include/nana/pop_ignore_diagnostic'
-  )
-  matches['push_ignore_diagnostic'] = (
-    'include/nana/push_ignore_diagnostic'
-  )
-  return matches
-
-def get_source_files():
-  matches = []
-  for root, dirnames, filenames in os.walk('./nana/source'):
-    for filename in fnmatch.filter(filenames, '*.cpp'):
-      matches.append(os.path.relpath(os.path.join(root, filename), './nana'))
+  matches = subdir_glob([
+    ("include/nana", "*.hpp"),
+    ("include/nana", "**/*.hpp"),
+  ])
   return matches
 
 cxx_library(
   name = 'nana',
-  srcs = get_source_files(),
+  srcs = glob([
+    ("source/**/*.cpp"),
+  ]),
   exported_headers = get_include_files(),
   compiler_flags = [
     '-std=c++14',

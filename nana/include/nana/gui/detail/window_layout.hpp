@@ -12,9 +12,8 @@
 
 #ifndef NANA_GUI_DETAIL_WINDOW_LAYOUT_HPP
 #define NANA_GUI_DETAIL_WINDOW_LAYOUT_HPP
-#include <nana/push_ignore_diagnostic>
-
 #include <nana/gui/basis.hpp>
+#include <nana/push_ignore_diagnostic.hpp>
 #include <vector>
 
 namespace nana
@@ -85,7 +84,7 @@ namespace detail
 }//end namespace detail
 }//end namespace nana
 
-#include <nana/pop_ignore_diagnostic>
+#include <nana/pop_ignore_diagnostic.hpp>
 
 #endif //NANA_GUI_DETAIL_WINDOW_LAYOUT_HPP
 

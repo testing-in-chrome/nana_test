@@ -14,13 +14,12 @@
 
 #ifndef NANA_DEPLOY_HPP
 #define NANA_DEPLOY_HPP
-#include <nana/push_ignore_diagnostic>
-
 #include <nana/config.hpp>
 
 
 #include <stdexcept>
 #include <nana/charset.hpp>
+#include <nana/push_ignore_diagnostic.hpp>
 
 //Implement workarounds for GCC/MinGW which version is below 4.8.2
 #if defined(STD_NUMERIC_CONVERSIONS_NOT_SUPPORTED)
@@ -232,5 +231,5 @@ namespace std {
 			make_unique(Args&&...) = delete;
 }
 #endif //STD_make_unique_NOT_SUPPORTED
-#include <nana/pop_ignore_diagnostic>
+#include <nana/pop_ignore_diagnostic.hpp>
 #endif //NANA_DEPLOY_HPP

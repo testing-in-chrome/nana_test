@@ -10,10 +10,9 @@
 *	@file: nana/internationalization.cpp
 */
 
-#include <nana/push_ignore_diagnostic>
-
 #include <nana/internationalization.hpp>
 #include <nana/gui/programming_interface.hpp>
+#include <nana/push_ignore_diagnostic.hpp>
 #include <unordered_map>
 #include <fstream>
 
@@ -506,4 +505,4 @@ namespace nana
 	//end class i18n_eval
 }
 
-#include <nana/pop_ignore_diagnostic>
+#include <nana/pop_ignore_diagnostic.hpp>

@@ -13,9 +13,9 @@
 #ifndef NANA_GUI_DETAIL_DRAWER_HPP
 #define NANA_GUI_DETAIL_DRAWER_HPP
 
-#include <nana/push_ignore_diagnostic>
 #include "general_events.hpp"
 #include <nana/paint/graphics.hpp>
+#include <nana/push_ignore_diagnostic.hpp>
 #include <functional>
 
 namespace nana
@@ -168,6 +168,6 @@ namespace nana
 	}//end namespace detail
 }//end namespace nana
 
-#include <nana/pop_ignore_diagnostic>
+#include <nana/pop_ignore_diagnostic.hpp>
 
 #endif

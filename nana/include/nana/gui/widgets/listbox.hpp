@@ -18,13 +18,12 @@
 
 #ifndef NANA_GUI_WIDGETS_LISTBOX_HPP
 #define NANA_GUI_WIDGETS_LISTBOX_HPP
-#include <nana/push_ignore_diagnostic>
-
 #include "widget.hpp"
 #include "detail/inline_widget.hpp"
 #include <nana/pat/abstract_factory.hpp>
 #include <nana/concepts.hpp>
 #include <nana/key_type.hpp>
+#include <nana/push_ignore_diagnostic.hpp>
 #include <functional>
 #include <initializer_list>
 #include <mutex>
@@ -1441,5 +1440,5 @@ the nana::detail::basic_window member pointer scheme
 	};
 }//end namespace nana
 
-#include <nana/pop_ignore_diagnostic>
+#include <nana/pop_ignore_diagnostic.hpp>
 #endif

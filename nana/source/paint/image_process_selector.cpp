@@ -1,5 +1,5 @@
-#include <nana/push_ignore_diagnostic>
 #include <nana/paint/image_process_selector.hpp>
+#include <nana/push_ignore_diagnostic.hpp>
 
 namespace nana
 {

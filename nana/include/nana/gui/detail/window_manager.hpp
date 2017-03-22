@@ -18,8 +18,7 @@
 #ifndef NANA_GUI_DETAIL_WINDOW_MANAGER_HPP
 #define NANA_GUI_DETAIL_WINDOW_MANAGER_HPP
 
-#include <nana/push_ignore_diagnostic>
-
+#include <nana/push_ignore_diagnostic.hpp>
 #include "window_layout.hpp"
 #include "event_code.hpp"
 #include "inner_fwd.hpp"
@@ -191,6 +190,6 @@ namespace detail
 }//end namespace detail
 }//end namespace nana
 
-#include <nana/pop_ignore_diagnostic>
+#include <nana/pop_ignore_diagnostic.hpp>
 
 #endif

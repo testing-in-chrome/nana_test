@@ -23,3 +23,16 @@ cxx_binary(
     '-std=c++14',
   ],
 )
+
+cxx_binary(
+  name = 'text',
+  srcs = [
+    'text.cc',
+  ],
+  deps = [
+    '//nana:nana',
+  ],
+  compiler_flags = [
+    '-std=c++14',
+  ],
+)

@@ -14,8 +14,8 @@
 #define NANA_BASIC_TYPES_HPP
 
 #include <nana/deploy.hpp>
+#include <nana/push_ignore_diagnostic.hpp>
 #include <cctype>
-#include <nana/push_ignore_diagnostic>
 
 namespace nana
 {
@@ -519,7 +519,7 @@ namespace nana
 		southeast
 	};
 }//end namespace nana
-#include <nana/pop_ignore_diagnostic>
+#include <nana/pop_ignore_diagnostic.hpp>
 #endif
 
 

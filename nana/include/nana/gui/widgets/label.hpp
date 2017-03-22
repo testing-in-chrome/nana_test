@@ -13,8 +13,8 @@
 #ifndef NANA_GUI_WIDGET_LABEL_HPP
 #define NANA_GUI_WIDGET_LABEL_HPP
 
+#include <nana/push_ignore_diagnostic.hpp>
 #include "widget.hpp"
-#include <nana/push_ignore_diagnostic>
 
 namespace nana
 {
@@ -81,6 +81,6 @@ namespace nana
 		void _m_caption(native_string_type&&) override;
 	};
 }//end namespace nana
-#include <nana/pop_ignore_diagnostic>
+#include <nana/pop_ignore_diagnostic.hpp>
 
 #endif

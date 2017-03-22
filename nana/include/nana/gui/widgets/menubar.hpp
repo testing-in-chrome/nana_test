@@ -12,9 +12,9 @@
  
 #ifndef NANA_GUI_WIDGETS_MENUBAR_HPP
 #define NANA_GUI_WIDGETS_MENUBAR_HPP
+#include <nana/push_ignore_diagnostic.hpp>
 #include "widget.hpp"
 #include "menu.hpp"
-#include <nana/push_ignore_diagnostic>
 
 namespace nana
 {
@@ -118,6 +118,6 @@ namespace nana
 		::nana::event_handle evt_resized_{nullptr};
 	};//end class menubar
 }//end namespace nana
-#include <nana/pop_ignore_diagnostic>
+#include <nana/pop_ignore_diagnostic.hpp>
 
 #endif

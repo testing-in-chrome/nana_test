@@ -14,7 +14,7 @@
 #define NANA_GUI_NOTIFIER_HPP
 #include <nana/gui/basis.hpp>
 #include <nana/gui/detail/general_events.hpp>
-#include <nana/push_ignore_diagnostic>
+#include <nana/push_ignore_diagnostic.hpp>
 
 namespace nana
 {
@@ -66,5 +66,5 @@ namespace nana
 		implement * impl_;
 	};
 }//end namespace nana
-#include <nana/pop_ignore_diagnostic>
+#include <nana/pop_ignore_diagnostic.hpp>
 #endif

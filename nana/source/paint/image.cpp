@@ -11,7 +11,6 @@
  *	@contributors:
  *		nabijaczleweli(pr#106)
  */
-#include <nana/push_ignore_diagnostic>
 #include <nana/detail/platform_spec_selector.hpp>
 #include <nana/paint/image.hpp>
 #include <algorithm>
@@ -22,6 +21,7 @@
 #include <nana/paint/detail/image_impl_interface.hpp>
 #include <nana/paint/pixel_buffer.hpp>
 #include <nana/filesystem/filesystem_ext.hpp>
+#include <nana/push_ignore_diagnostic.hpp>
 
 #if defined(NANA_ENABLE_JPEG)
 #include "detail/image_jpeg.hpp"
